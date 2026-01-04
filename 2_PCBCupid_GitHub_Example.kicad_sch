@@ -454,28 +454,24 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_MEC_5G"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Switch:SW_DPST_x2"
 			(pin_names
-				(offset 1.016)
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "SW_MEC_5G"
-				(at 0 -1.524 0)
+			(property "Value" "SW_DPST_x2"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -483,24 +479,6 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "MEC 5G single pole normally-open tactile switch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -509,7 +487,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -518,7 +496,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SW*MEC*5G*"
+			(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -527,7 +505,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_MEC_5G_0_1"
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_DPST_x2_0_0"
 				(circle
 					(center -2.032 0)
 					(radius 0.508)
@@ -541,7 +528,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
+						(xy -1.524 0.254) (xy 1.524 1.778)
 					)
 					(stroke
 						(width 0)
@@ -562,18 +549,8 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "SW_DPST_x2_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -602,7 +579,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -611,11 +588,10 @@
 					)
 				)
 			)
-			(symbol "SW_MEC_5G_1_1"
+			(symbol "SW_DPST_x2_2_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
-					(hide yes)
 					(name "A"
 						(effects
 							(font
@@ -623,7 +599,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -634,7 +610,6 @@
 				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
-					(hide yes)
 					(name "B"
 						(effects
 							(font
@@ -884,7 +859,7 @@
 		(at 130.81 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1c7e7c38-e122-409f-b360-13305ab7fcf3")
+		(uuid "ee525da7-f156-4a0d-98c8-6fa4b785f83e")
 	)
 	(wire
 		(pts
@@ -1034,7 +1009,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 130.81 102.87 0)
 			(effects
 				(font
@@ -1179,7 +1154,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 118.11 102.87 0)
 			(effects
 				(font
@@ -1258,7 +1233,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 116.332 111.76 90)
 			(effects
 				(font
@@ -1433,6 +1408,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_DPST_x2")
+		(at 130.81 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd071019-fdcb-4ba8-aa46-c4c1ce1e888f")
+		(property "Reference" "SW2"
+			(at 132.08 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_DPST_x2"
+			(at 132.08 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "810dcef1-0185-4a39-a30f-c712275734d8")
+		)
+		(pin "1"
+			(uuid "a05c9184-1a29-437a-8338-7d71d50d3004")
+		)
+		(pin "2"
+			(uuid "1db7e1b7-3719-4aa6-b72f-007454499c78")
+		)
+		(pin "3"
+			(uuid "476719f4-a5c1-4746-8b54-b647d3943fe1")
+		)
+		(instances
+			(project ""
+				(path "/c2af59b7-a490-43ea-8acf-dde769c9e4ce"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 148.59 104.14 0)
 		(unit 1)
@@ -1526,7 +1577,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 129.032 111.76 90)
 			(effects
 				(font
@@ -1596,7 +1647,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left"
 			(at 154.94 105.41 0)
 			(effects
 				(font
@@ -1633,82 +1684,6 @@
 			(project ""
 				(path "/c2af59b7-a490-43ea-8acf-dde769c9e4ce"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_MEC_5G")
-		(at 130.81 91.44 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5d8635c-e914-4b71-a5da-042ce8bfd568")
-		(property "Reference" "SW1"
-			(at 132.08 90.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW_MEC_5G"
-			(at 132.08 92.7099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488"
-			(at 125.73 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MEC 5G single pole normally-open tactile switch"
-			(at 130.81 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d1950e64-e982-4e55-888c-887ce0fecc81")
-		)
-		(pin "4"
-			(uuid "9c75e2cf-3350-4f6a-8941-35d9f3c07297")
-		)
-		(pin "3"
-			(uuid "a21dbcd9-2b46-418c-a955-31d9eea3756b")
-		)
-		(pin "2"
-			(uuid "0114b5c6-3ecc-4dac-90fb-004117f6713c")
-		)
-		(instances
-			(project ""
-				(path "/c2af59b7-a490-43ea-8acf-dde769c9e4ce"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
